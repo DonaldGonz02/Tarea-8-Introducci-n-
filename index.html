@@ -5,38 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solución de Problema</title>
 </head>
-<body onload="init();">
+<body onload="init()">
 <!--Captura de Datos, se usó HTML para la estructura de la página-->    
-    <h1>Suma de Dos variables</h1>
+    <h1>Operaciones Básicass</h1>
 
     <!--Planteamiento del Problema-->
     <p>Desarrollar un software que sea capas de capturar 2 valores enteros, los sume y que se muestre el resultado</p>
 
     <!--Generar los datos de entrada-->
-    <p>2 variables a y Resultado, con valores enteros</p>
+    <p>2 variables a y b, con valores enteros</p>
 
     <!--Valores de Salida-->
     <p>El valor de Salida será un entero</p>
 
-    <p>dividirvaloDiviciónde a y Resultado, y enviarlo a la variable del resultado</p>
+    <p>Tomar los valores de a y b, y enviarlo a la variable del resultado</p>
 
     <!--Campos-->
+
+        <label for="a">Ingrese el primer número</label>
+        <input type="number" id="a" name="a"> <br>
+        <br>
+        <label for="b">Ingrese el segundo número</label>
+        <input type="number" id="b" name="b"> <br>
+        
+        <!--Botón para realizar la operación-->
+        <button onclick="sumar">Sumar</button>
+        <br>   
+       
+        <!--Campo para el resultado-->
+        <label for="resultado">Este es el resultado</label>
+        <input type="number" id="resultado" name="resultado"><br>
     
-    <label for="a">Ingrese el primer número</label>
-    <input type="number" id="a" name="a"> <br>
-    <label for="b">Ingrese el segundo número</label>
-    <input type="number" id="b" name="b"> <br>
-    
-    <!--Botón para realizar la operación-->
-    <button id="suma" onclick="sumar()">Sumar</button><br>   
-    <button id="resta" onclick="restar()">Restar</button><br>   
-    <button id="multiplicación" onclick="multiplicar()">Multiplicar</button><br>   
-    <button id="división" onclick="dividir()">Dividir</button><br>   
-    
-    <!--Campo para el resultado-->
-    <label for="resultado">Este es el resultado</label>
-    <input type="number" id="resultado" name="resultado"><br>
-  
-    <script src="funcionalidades.js"></script>
+    <script>
+        function init(){
+            alert ("Bienvenidos :)");
+           
+            }
+        </script>    
+           
 </body>
 </html>
