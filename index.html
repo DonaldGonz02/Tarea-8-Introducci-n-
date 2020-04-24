@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solución de Problema</title>
 </head>
-<body>
+<body onload="init();">
+<!--Captura de Datos, se usó HTML para la estructura de la página-->    
     <h1>Suma de Dos variables</h1>
 
     <!--Planteamiento del Problema-->
@@ -17,23 +18,25 @@
     <!--Valores de Salida-->
     <p>El valor de Salida será un entero</p>
 
-    <p>Sumar los valores de a y Resultado, y enviarlo a la variable del resultado</p>
+    <p>dividirvaloDiviciónde a y Resultado, y enviarlo a la variable del resultado</p>
 
     <!--Campos-->
-    <!--Descripcion para el primer valor-->
+    
     <label for="a">Ingrese el primer número</label>
     <input type="number" id="a" name="a"> <br>
-    <!--Descripcion para el segundo valor-->
-    <br>
-    <label for="a">Ingrese el segundo número</label>
-    <input type="number" id="Resultado" name="Resultado"> <br>
-
+    <label for="b">Ingrese el segundo número</label>
+    <input type="number" id="b" name="b"> <br>
+    
     <!--Botón para realizar la operación-->
-    <button>Suma</button> <br>   
-
+    <button id="suma" onclick="sumar()">Sumar</button><br>   
+    <button id="resta" onclick="restar()">Restar</button><br>   
+    <button id="multiplicación" onclick="multiplicar()">Multiplicar</button><br>   
+    <button id="división" onclick="dividir()">Dividir</button><br>   
+    
     <!--Campo para el resultado-->
-    <label for="Resultado">Este es el Resultado</label>
-    <input type="number" id="Resultado" name="Resultado"> <br>
-
+    <label for="resultado">Este es el resultado</label>
+    <input type="number" id="resultado" name="resultado"><br>
+  
+    <script src="funcionalidades.js"></script>
 </body>
 </html>
